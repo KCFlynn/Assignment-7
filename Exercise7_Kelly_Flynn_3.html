@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Fade</title>
+<style>       
+        
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script>
+        
+$(document).ready(function(){
+
+    $('#fadeImage').click( function(){
+        
+       $('#Image').fadeOut(1000);
+        
+    });
+    
+});
+  
+    </script>
+    
+</head>
+<body>
+    
+<p>Click on the picture to make it fade!</p>
+    
+<div id='fadeImage'><img src="cow.jpg" id='Image'></div>
+        
+</body>
+</html>

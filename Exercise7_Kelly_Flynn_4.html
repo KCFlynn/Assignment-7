@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Name, Number & Color</title>
+    
+</head>
+    <style>
+    body {
+    background-color: #efefef;
+    color: #222;
+    font-family: helveticaneue, "Helvetica Neue", helvetica, sans-serif;
+    padding: 2em;
+}
+
+h1 {
+	border-bottom: 1px solid #8999af;
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	color: #3A497B;
+}
+
+#page {
+	max-width: 43.75em;
+	margin: 1em auto 1em;
+}
+
+input[type=text] {
+    padding: 0.5em;
+    border: 1px solid #999;
+    width: 20em;
+    display: block;
+    font-family: helveticaneue, "Helvetica Neue", helvetica, sans-serif;
+    font-size: 100%;
+}
+
+label {
+    display: block;
+
+    margin-bottom: 0.2em;
+    color: #333;
+}
+
+.group {
+    margin: 0 0 1em;
+}
+		
+.error {
+    background: #ecc;
+    border: 1px solid #933;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.error label {
+	
+   
+}
+
+.msg {
+    background: #cec;
+    border: 1px solid #393;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.msg p {
+    padding-left: 0.2em;
+    margin-bottom: 0.2em;
+
+    font-weight: bold;
+}
+    </style>
+<body>
+
+<div id="page">
+
+<h1>Look Ma No Hands!</h1>
+
+<form id="myform">
+    
+    <div class="group">
+    <label>Your Name:</label>
+    <input type="text" id='name' placeholder="Your name">
+    </div>
+    
+    <div class="group">
+    <label>Your Phone Number (Required):</label>
+    <input type="text" placeholder="(987) 654-3210">
+    </div>
+    
+    <div class="group">
+    <label>Your Favorite Color (Extra Good):</label>
+    <input id='GC' type="text" placeholder="Favorite Color" required>
+    </div>
+    
+   
+    
+</form>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../lib/jquery/jquery.min.js"><\/script>');</script>
+
+<script>
+    
+$(function(){
+'use strict';
+    
+   	var $form = $('#myform');
+	
+	$form.find('.group:nth-child(1)')
+		 .addClass('error')
+         .append('<br>Error!');	    
+        
+	$form.find('.group:nth-child(2)')
+		 .addClass('msg')
+		 .append('<p>Required!</p>');
+        
+    $form.find('.group:nth-child(3)
+    if($(this).val() != 0){
+         $(this).addClass('msg')
+         $(this).append('<p>Good choice!</p>');
+    
+         
+   
+   
+      
+  
+		 
+
+});
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>#2 Full Name</title> 
+</head>
+    
+<style>
+    
+.fullName{
+float: left; /*this puts the the name inline*/
+font-size: 36px;
+font-family: verdana;
+ }  
+   
+</style>
+    
+<body>
+    
+<p id="firstName" class="fullName"></p>
+<p id="lastName" class="fullName"></p>
+    
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+    
+<script>    
+$("#firstName").text('Kelly'); //using jquery function for textContent//
+$("#lastName").html('&nbspFlynn'); //using jquery function for innerHTML, 
+                                   //&nbsp to add space between names
+    //&nbsp cannot be used with textContent to add space but can be used with innerHTML//
+</script>
+    
+</body> 
+</html>
