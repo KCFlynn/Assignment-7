@@ -14,11 +14,12 @@
 $(function() {
     "use strict";
 
-    $('#btn').click( function(){
+    $('#btn').on('click', function(){
         
        $('#Image').animate({        
-            'opacity' : 0.5
-       }, 1500, "swing");
+            opacity : 0.5
+           
+       }, {duration: 1500, easing: 'swing'});
     
    });
     
