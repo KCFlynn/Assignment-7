@@ -111,25 +111,22 @@ $(function(){
    	var $form = $('#myform');
 	
    $('#name').on('change', function() {
-	$form.find('.group:nth-child(1)')
-		 .addClass('error')
-         .append('<br>Error!');
+	    $form.find('.group:nth-child(1)')
+		     .addClass('error')
+             .append('<br>Error!');
         });	
     
-    $('#phone').on('change', function() {
-	$form.find('.group:nth-child(2)')
-		 .addClass('msg')
-		 .append('<p>Required!</p>');
-      
-    });	
+   $('#phone').on('change', function() {
+	     $form.find('.group:nth-child(2)')
+		      .addClass('msg')
+		      .append('<p>Required!</p>');
+       });	
                
- $('#GC').on('change', function() {
-     $form.find('.group:nth-child(3)') 
-         .addClass('msg')
-  .append('<p>Good choice!</p>');
-        
-        
-    });		 
+   $('#GC').on('change', function() {
+      $form.find('.group:nth-child(3)') 
+           .addClass('msg')
+           .append('<p>Good choice!</p>');    
+       });		 
 
 });
     
